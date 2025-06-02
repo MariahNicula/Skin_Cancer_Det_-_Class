@@ -1,7 +1,7 @@
 components:
 - layout_properties: {slot: title}
   name: headline_1
-  properties: {role: headline, text: Skin Cancer Detection and Classification}
+  properties: {align: left, role: headline, text: Detectia si Clasificarea Cancerului de Piele}
   type: Label
 - components:
   - layout_properties: {grid_position: 'AYUHAE,RCTMUE'}
