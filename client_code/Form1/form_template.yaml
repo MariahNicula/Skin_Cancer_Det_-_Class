@@ -40,18 +40,30 @@ components:
     name: judet
     properties: {align: center, visible: true}
     type: TextBox
-  - layout_properties: {grid_position: 'BRJBTC,EWEXVW'}
+  - layout_properties: {grid_position: 'KVJADE,VHIKJK'}
     name: spacer_1
-    properties: {height: 32}
+    properties: {height: 20}
     type: Spacer
   - layout_properties: {grid_position: 'LAGLRU,FEBCCK'}
     name: headline_3
-    properties: {align: center, bold: false, role: headline, text: 'Introduceti imaginea dermatologica pe care doriti sa o analizati:'}
+    properties: {align: center, bold: false, role: headline, text: 'Introduceti imaginea dermatologica: '}
     type: Label
-  - layout_properties: {grid_position: 'DWSNRT,EGWXJF'}
+  - layout_properties: {grid_position: 'LAGLRU,CVFJGF'}
     name: file_loader_1
-    properties: {}
+    properties: {align: center}
     type: FileLoader
+  - layout_properties: {grid_position: 'TSGODQ,OLRADC'}
+    name: spacer_2
+    properties: {height: 16.199981689453125}
+    type: Spacer
+  - layout_properties: {grid_position: 'AXZQRA,DFJCLV'}
+    name: button_1
+    properties: {bold: true, enabled: true, text: detecteaza si clasifica, visible: true}
+    type: Button
+  - layout_properties: {grid_position: 'LRPNDF,LZXPAP'}
+    name: type_of_cancer_label
+    properties: {align: center, role: subheading, text: '', visible: false}
+    type: Label
   layout_properties: {slot: default}
   name: card_1
   properties: {role: card}
