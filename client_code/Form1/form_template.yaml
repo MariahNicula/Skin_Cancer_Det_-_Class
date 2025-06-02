@@ -5,7 +5,7 @@ components:
   type: Label
 - layout_properties: {slot: default}
   name: label_1
-  properties: {text: Nume}
+  properties: {align: center, role: headline, text: 'Introduceti datele personale: '}
   type: Label
 container:
   properties: {html: '@theme:standard-page.html'}
