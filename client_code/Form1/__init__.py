@@ -18,7 +18,7 @@ class Form1(Form1Template):
 
   def categorise_button_click_click(self, **event_args):
     """This method is called when the button is clicked"""
-    nume = self.nume
+    nume = self.nume.text
     
     prenume = self.prenume
     
