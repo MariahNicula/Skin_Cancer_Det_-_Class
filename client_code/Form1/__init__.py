@@ -1,8 +1,6 @@
 from ._anvil_designer import Form1Template
 from anvil import *
-
-import anvil.server
-anvil.server.connect("client_ZBSWTBX67R6TUJWI4OHLTM46-P7XQZSMRHDQN4ABN")
+import anvil
 
 
 class Form1(Form1Template):
@@ -20,13 +18,11 @@ class Form1(Form1Template):
     """This method is called when the button is clicked"""
     nume = self.nume.text
     
-    prenume = self.prenume
+    prenume = self.prenume.text
     
-    dob = self.date_picker_1.date
-    today = date.today()
-    varsta = today.year - dob.year - ((today.month, today.day) < (dob.month, dob.day))
+    varsta = self.varsta.text
 
-    judet = self.judet
+    judet = self.judet.text
 
     patients = anvil.server.call('predict_cancer', 
                                  nume, 
@@ -36,6 +32,10 @@ class Form1(Form1Template):
     if patients:
       self.type_of_cancer_label.visible = True
       self.type_of_cancer_label.text = 'Pacientul sufera de cancer numit' + patients.capitalize()
+
+  def varsta_pressed_enter(self, **event_args):
+    """This method is called when the user presses Enter in this text box"""
+    pass
       
     
     

@@ -26,12 +26,13 @@ components:
     type: TextBox
   - layout_properties: {grid_position: 'BOXMXS,EYETDW BEASSP,ZNUYOO'}
     name: label_2
-    properties: {text: 'Anul nasterii: '}
+    properties: {text: 'Varsta:'}
     type: Label
-  - layout_properties: {grid_position: 'BOXMXS,EYETDW BEASSP,JGUDYX'}
-    name: date_picker_1
-    properties: {align: center}
-    type: DatePicker
+  - event_bindings: {pressed_enter: varsta_pressed_enter}
+    layout_properties: {grid_position: 'BOXMXS,EYETDW BEASSP,RMUKLY'}
+    name: varsta
+    properties: {align: center, italic: false, placeholder: '', visible: true}
+    type: TextBox
   - layout_properties: {grid_position: 'BOXMXS,NCIMZS'}
     name: label_4
     properties: {align: right, text: 'Judetul:'}
